@@ -16,7 +16,7 @@ public class SequenceTest {
         bestY = "AACAGTTACC";
 
         s = new Sequence(x, y);
-        s.alignStrings();
+        s.startSequence();
     }
 
 

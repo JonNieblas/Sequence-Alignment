@@ -13,15 +13,15 @@ public class Score {
     private char choice;
 
     public Score(int p, char c){
-        this.points = p;
-        this.choice = c;
+      this.points = p;
+      this.choice = c;
     }
 
     public int getPoints(){
-        return this.points;
+      return this.points;
     }
 
     public char getChoice(){
-        return this.choice;
+      return this.choice;
     }
 }
