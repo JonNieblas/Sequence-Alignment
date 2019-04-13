@@ -11,8 +11,11 @@ public class Driver {
         String y = "TAAGGTCA";
         String x = "AACAGTTACC";
 
-        Sequence s1 = new Sequence(x, y);
+        String y1 = "GACATATTAC";
+        String x1 = "AACGTAGAC";
+        Sequence s1 = new Sequence();
 
-        s1.startSequence();
+        s1.startSequence(x, y);
+        s1.startSequence(x1, y1);
     }
 }
