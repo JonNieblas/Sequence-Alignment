@@ -50,4 +50,25 @@ public class SequenceTest {
 
         assertEquals(s.getBestY(), bestY1);
     }
+
+    // Test large string vs. small string
+    @Test
+    public void testReturnBestXSL(){
+        String x2 = "GATTATAC";
+        String y2 = "TATAT";
+        String bestX2 = "GATTATAC";
+        s.startSequence(x2, y2);
+
+        assertEquals(s.getBestX(), bestX2);
+    }
+
+    @Test
+    public void testReturnBestYSL(){
+        String x2 = "GATTATAC";
+        String y2 = "TATAT";
+        String bestY2 = "TAT_AT__";
+        s.startSequence(x2, y2);
+
+        assertEquals(s.getBestY(), bestY2);
+    }
 }
