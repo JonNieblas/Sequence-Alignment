@@ -35,7 +35,7 @@ public class SequenceTest {
     public void testReturnBestXOdd(){
         String x1 = "AACGTAGAC";
         String y1 = "GACATATTAC";
-        String bestX1 = "AACGTA_GAC";
+        String bestX1 = "AACGTAG_AC";
         s.startSequence(x1, y1);
 
         assertEquals(s.getBestX(), bestX1);

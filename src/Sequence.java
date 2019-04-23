@@ -123,15 +123,13 @@ public class Sequence {
                 int xDash = alignedTable[i - 1][j].getPoints() + SPACE;
                 int yDash = alignedTable[i][j - 1].getPoints() + SPACE;
 
-                if(none <= xDash && none <= yDash){
+                if(none < xDash && none < yDash)
                     alignedTable[i][j] = new Score(none, NONECHAR);
-                }
-                else if(xDash <= yDash){
+                else if(xDash < yDash)
                     alignedTable[i][j] = new Score(xDash, XCHAR);
-                }
-                else{
+                else
                     alignedTable[i][j] = new Score(yDash, YCHAR);
-                }
+
             }
         }
 
