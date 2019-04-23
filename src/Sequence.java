@@ -18,6 +18,7 @@ public class Sequence {
     private static final char XCHAR = 'x';
     private static final char YCHAR = 'y';
     private static final char NONECHAR = 'n';
+    private static int score;
 
     // holds our best XY vals for testing
     private static String[] bestXY = new String[2];
@@ -83,6 +84,7 @@ public class Sequence {
         }
         bestXY[0] = xBest;
         bestXY[1] = yBest;
+        score = alignedTable[m][n].getPoints();
     }
 
     // Inserts base case values into the table
@@ -194,6 +196,7 @@ public class Sequence {
     private static void printBestStrings(){
         System.out.println("\nFinal x: " + bestXY[0]);
         System.out.println("Final y: " + bestXY[1]);
+        System.out.println("Best Score: " + score);
     }
 
     public String getBestX(){
