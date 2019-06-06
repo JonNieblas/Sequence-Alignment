@@ -10,15 +10,8 @@ public class Driver {
         System.out.println("Please input a string for y: ");
         String y = s.next();
 
-//        String y = "TAAGGTCA";
-//        String x = "AACAGTTACC";
-//
-//        String y1 = "GACATATTAC";
-//        String x1 = "AACGTAGAC";
-
         Sequence s1 = new Sequence();
 
         s1.startSequence(x, y);
-        //s1.startSequence(x1, y1);
     }
 }

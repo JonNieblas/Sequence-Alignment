@@ -1,17 +1,6 @@
 /*
  * Dynamically aligns strings x and y using spaces, with the goal
  * of getting the strings to have similar compositions index-wise.
- *
- * Adds spaces on a point based system.
- * The system is as follows:
- *      For char i of string x and char j of string y:
- *          If i matches j, reward = 0 points.
- *          If i doesn't match j, reward = 1 point.
- *          If i is paired with a SPACE, reward = 2 points.
- *          If j is paired with a SPACE, reward = 2 points.
- * The system finds the optimal way to input spaces into both
- * strings by computing the score with the lowest amount of points,
- * then tracing backwards to build the two strings.
  */
 public class Sequence {
     private static final int SPACE = 2;
